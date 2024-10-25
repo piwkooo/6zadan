@@ -25,7 +25,7 @@ function saveToFile() {
 
     try {
         fs.writeFileSync(fileName, `imie: ${firstName}, nazwisko: ${lastName}, wiek: ${age}`);
-        console.log(`Zapisano dane do pliku: ${fileName}`);
+        console.log(`zapisano dane do pliku: ${fileName}`);
         readFromFile();
     } catch (error) {
         console.error('cos poszlo nie tak :(', error);
